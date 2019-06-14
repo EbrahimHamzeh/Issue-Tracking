@@ -1,0 +1,332 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.Services\\Ebrahim.IssueTracking.Services.csproj": {}
+  },
+  "projects": {
+    "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj",
+        "projectName": "Ebrahim.issueTracking.Common",
+        "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj",
+        "packagesPath": "C:\\Users\\Ebrahim\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ebrahim\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DataLayer\\Ebrahim.IssueTracking.DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DataLayer\\Ebrahim.IssueTracking.DataLayer.csproj",
+        "projectName": "Ebrahim.IssueTracking.DataLayer",
+        "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DataLayer\\Ebrahim.IssueTracking.DataLayer.csproj",
+        "packagesPath": "C:\\Users\\Ebrahim\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ebrahim\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj": {
+                "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj"
+              },
+              "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj": {
+                "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj",
+        "projectName": "Ebrahim.IssueTracking.DomainCkasses",
+        "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj",
+        "packagesPath": "C:\\Users\\Ebrahim\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ebrahim\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.Services\\Ebrahim.IssueTracking.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.Services\\Ebrahim.IssueTracking.Services.csproj",
+        "projectName": "Ebrahim.IssueTracking.Services",
+        "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.Services\\Ebrahim.IssueTracking.Services.csproj",
+        "packagesPath": "C:\\Users\\Ebrahim\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ebrahim\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj": {
+                "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj"
+              },
+              "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DataLayer\\Ebrahim.IssueTracking.DataLayer.csproj": {
+                "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DataLayer\\Ebrahim.IssueTracking.DataLayer.csproj"
+              },
+              "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj": {
+                "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj"
+              },
+              "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.Issuetracking.ViewModels\\Ebrahim.Issuetracking.ViewModels.csproj": {
+                "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.Issuetracking.ViewModels\\Ebrahim.Issuetracking.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Antiforgery": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.Issuetracking.ViewModels\\Ebrahim.Issuetracking.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.Issuetracking.ViewModels\\Ebrahim.Issuetracking.ViewModels.csproj",
+        "projectName": "Ebrahim.Issuetracking.ViewModels",
+        "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.Issuetracking.ViewModels\\Ebrahim.Issuetracking.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\Ebrahim\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.Issuetracking.ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ebrahim\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj": {
+                "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

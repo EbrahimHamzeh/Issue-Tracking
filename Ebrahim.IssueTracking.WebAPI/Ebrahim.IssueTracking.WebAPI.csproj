@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ebrahim.IssueTracking.Services\Ebrahim.IssueTracking.Services.csproj" />
+    <ProjectReference Include="..\Ebrahim.IssueTracking.DomainCkasses\Ebrahim.IssueTracking.DomainCkasses.csproj" />
+    <ProjectReference Include="..\Ebrahim.issueTracking.Common\Ebrahim.issueTracking.Common.csproj" />
+    <ProjectReference Include="..\Ebrahim.IssueTracking.DataLayer\Ebrahim.IssueTracking.DataLayer.csproj" />
+    <ProjectReference Include="..\Ebrahim.Issuetracking.ViewModels\Ebrahim.Issuetracking.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

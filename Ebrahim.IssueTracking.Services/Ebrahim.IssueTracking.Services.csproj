@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Antiforgery" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ebrahim.issueTracking.Common\Ebrahim.issueTracking.Common.csproj" />
+    <ProjectReference Include="..\Ebrahim.IssueTracking.DomainCkasses\Ebrahim.IssueTracking.DomainCkasses.csproj" />
+    <ProjectReference Include="..\Ebrahim.IssueTracking.DataLayer\Ebrahim.IssueTracking.DataLayer.csproj" />
+    <ProjectReference Include="..\Ebrahim.Issuetracking.ViewModels\Ebrahim.Issuetracking.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

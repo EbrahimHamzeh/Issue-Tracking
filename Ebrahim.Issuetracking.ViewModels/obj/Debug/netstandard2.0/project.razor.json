@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\Click\\Desktop\\Ebrahim.IssueTracking\\Ebrahim.Issuetracking.ViewModels\\Ebrahim.Issuetracking.ViewModels.csproj",
+  "TargetFramework": "netstandard2.0",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
