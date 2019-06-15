@@ -19,15 +19,3 @@ C:\Users\Ebrahim\Desktop\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.Vie
 C:\Users\Ebrahim\Desktop\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\bin\Debug\netstandard2.0\Ebrahim.issueTracking.Common.dll
 C:\Users\Ebrahim\Desktop\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\bin\Debug\netstandard2.0\Ebrahim.issueTracking.Common.pdb
 C:\Users\Ebrahim\Desktop\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\obj\Debug\netstandard2.0\Ebrahim.Issuetracking.ViewModels.csproj.CopyComplete
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\bin\Debug\netstandard2.0\Ebrahim.Issuetracking.ViewModels.deps.json
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\bin\Debug\netstandard2.0\Ebrahim.Issuetracking.ViewModels.dll
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\bin\Debug\netstandard2.0\Ebrahim.Issuetracking.ViewModels.pdb
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\bin\Debug\netstandard2.0\Ebrahim.issueTracking.Common.dll
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\bin\Debug\netstandard2.0\Ebrahim.issueTracking.Common.pdb
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\obj\Debug\netstandard2.0\Ebrahim.Issuetracking.ViewModels.csprojAssemblyReference.cache
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\obj\Debug\netstandard2.0\Ebrahim.Issuetracking.ViewModels.csproj.CoreCompileInputs.cache
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\obj\Debug\netstandard2.0\Ebrahim.Issuetracking.ViewModels.AssemblyInfoInputs.cache
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\obj\Debug\netstandard2.0\Ebrahim.Issuetracking.ViewModels.AssemblyInfo.cs
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\obj\Debug\netstandard2.0\Ebrahim.Issuetracking.ViewModels.csproj.CopyComplete
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\obj\Debug\netstandard2.0\Ebrahim.Issuetracking.ViewModels.dll
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.Issuetracking.ViewModels\obj\Debug\netstandard2.0\Ebrahim.Issuetracking.ViewModels.pdb

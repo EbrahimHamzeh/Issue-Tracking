@@ -11,6 +11,7 @@ using Newtonsoft.Json.Linq;
 using System.Security.Claims;
 using Ebrahim.IssueTracking.DomainCkasses.UserIdentity;
 using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 
 namespace Ebrahim.IssueTracking.WebAPI.Controllers
 {
@@ -71,7 +72,7 @@ namespace Ebrahim.IssueTracking.WebAPI.Controllers
 
             return Ok(new { access_token = result.AccessToken, refresh_token = result.RefreshToken });
         }
-
+        
         [AllowAnonymous]
         [HttpPost("[action]")]
         public async Task<IActionResult> RefreshToken([FromBody]JToken jsonBody)

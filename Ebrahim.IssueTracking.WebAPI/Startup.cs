@@ -1,7 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System;
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using Ebrahim.IssueTracking.DataLayer.Context;
@@ -11,7 +10,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -21,6 +19,7 @@ using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using Ebrahim.Issuetracking.ViewModels.Settings;
 using Ebrahim.IssueTracking.Services;
+
 
 namespace Ebrahim.IssueTracking.WebAPI
 {
@@ -145,7 +144,43 @@ namespace Ebrahim.IssueTracking.WebAPI
             services.AddMvc(options =>
             {
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+                options.Filters.Add(
+                    new ProducesResponseTypeAttribute(StatusCodes.Status400BadRequest));
+                options.Filters.Add(
+                    new ProducesResponseTypeAttribute(StatusCodes.Status406NotAcceptable));
+                options.Filters.Add(
+                    new ProducesResponseTypeAttribute(StatusCodes.Status500InternalServerError));
+                options.Filters.Add(
+                    new ProducesDefaultResponseTypeAttribute());
+
+                options.ReturnHttpNotAcceptable = true;
             }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddSwaggerGen(setupAction =>
+            {
+                setupAction.SwaggerDoc(
+                   name: "api",
+                   info: new Microsoft.OpenApi.Models.OpenApiInfo()
+                   {
+                       Title = "Library API",
+                       Version = "1",
+                       Description = "Through this API you can access authors and their books.",
+                       Contact = new Microsoft.OpenApi.Models.OpenApiContact()
+                       {
+                           Email = "pranc14@gmail.com",
+                           Name = "Ebrahim Hamzeh",
+                           //Url = new Uri("http://www.sample.com")
+                       },
+                       License = new Microsoft.OpenApi.Models.OpenApiLicense()
+                       {
+                           Name = "MIT License",
+                           Url = new Uri("https://opensource.org/licenses/MIT")
+                       }
+                   });
+
+                var xmlFiles = Directory.GetFiles(AppContext.BaseDirectory, "*.xml", SearchOption.TopDirectoryOnly).ToList();
+                xmlFiles.ForEach(xmlFile => setupAction.IncludeXmlComments(xmlFile));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -210,6 +245,16 @@ namespace Ebrahim.IssueTracking.WebAPI
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+            });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(setupAction =>
+            {
+                setupAction.SwaggerEndpoint(
+                    "/swagger/api/swagger.json",
+                    "Library API");
+                    
+                setupAction.RoutePrefix = "";
             });
 
             // catch-all handler for HTML5 client routes - serve index.html

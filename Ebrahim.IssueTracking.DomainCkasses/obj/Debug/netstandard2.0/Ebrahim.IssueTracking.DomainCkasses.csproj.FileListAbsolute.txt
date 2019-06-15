@@ -16,12 +16,3 @@ C:\Users\Ebrahim\Desktop\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.Dom
 C:\Users\Ebrahim\Desktop\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.DomainCkasses\obj\Debug\netstandard2.0\Ebrahim.IssueTracking.DomainCkasses.AssemblyInfo.cs
 C:\Users\Ebrahim\Desktop\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.DomainCkasses\obj\Debug\netstandard2.0\Ebrahim.IssueTracking.DomainCkasses.dll
 C:\Users\Ebrahim\Desktop\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.DomainCkasses\obj\Debug\netstandard2.0\Ebrahim.IssueTracking.DomainCkasses.pdb
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.DomainCkasses\bin\Debug\netstandard2.0\Ebrahim.IssueTracking.DomainCkasses.deps.json
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.DomainCkasses\bin\Debug\netstandard2.0\Ebrahim.IssueTracking.DomainCkasses.dll
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.DomainCkasses\bin\Debug\netstandard2.0\Ebrahim.IssueTracking.DomainCkasses.pdb
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.DomainCkasses\obj\Debug\netstandard2.0\Ebrahim.IssueTracking.DomainCkasses.csprojAssemblyReference.cache
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.DomainCkasses\obj\Debug\netstandard2.0\Ebrahim.IssueTracking.DomainCkasses.csproj.CoreCompileInputs.cache
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.DomainCkasses\obj\Debug\netstandard2.0\Ebrahim.IssueTracking.DomainCkasses.AssemblyInfoInputs.cache
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.DomainCkasses\obj\Debug\netstandard2.0\Ebrahim.IssueTracking.DomainCkasses.AssemblyInfo.cs
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.DomainCkasses\obj\Debug\netstandard2.0\Ebrahim.IssueTracking.DomainCkasses.dll
-D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.DomainCkasses\obj\Debug\netstandard2.0\Ebrahim.IssueTracking.DomainCkasses.pdb

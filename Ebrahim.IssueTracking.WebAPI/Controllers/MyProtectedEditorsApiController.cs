@@ -11,14 +11,14 @@ namespace Ebrahim.IssueTracking.WebAPI.Controllers
     [Authorize(Policy = CustomRoles.Editor)]
     public class MyProtectedEditorsApiController : Controller
     {
-        public IActionResult Get()
-        {
-            return Ok(new
-            {
-                Id = 1,
-                Title = "Hello from My Protected Editors Controller! [Authorize(Policy = CustomRoles.Editor)]",
-                Username = this.User.Identity.Name
-            });
-        }
+        // public IActionResult Get()
+        // {
+        //     return Ok(new
+        //     {
+        //         Id = 1,
+        //         Title = "Hello from My Protected Editors Controller! [Authorize(Policy = CustomRoles.Editor)]",
+        //         Username = this.User.Identity.Name
+        //     });
+        // }
     }
 }

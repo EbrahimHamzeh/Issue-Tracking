@@ -10,14 +10,14 @@ namespace Ebrahim.IssueTracking.WebAPI.Controllers
     [Authorize]
     public class MyProtectedApiController : Controller
     {
-        public IActionResult Get()
-        {
-            return Ok(new
-            {
-                Id = 1,
-                Title = "Hello from My Protected Controller! [Authorize]",
-                Username = this.User.Identity.Name
-            });
-        }
+        // public IActionResult Get()
+        // {
+        //     return Ok(new
+        //     {
+        //         Id = 1,
+        //         Title = "Hello from My Protected Controller! [Authorize]",
+        //         Username = this.User.Identity.Name
+        //     });
+        // }
     }
 }
