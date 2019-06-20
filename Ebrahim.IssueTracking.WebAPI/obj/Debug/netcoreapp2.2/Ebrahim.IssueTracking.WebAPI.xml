@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ebrahim.IssueTracking.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:Ebrahim.IssueTracking.WebAPI.Controllers.TiketController.GetPagedTikets(Ebrahim.Issuetracking.ViewModels.TiketQueryViewModel)">
+             <summary>
+              نمایش لیست تیکت ها
+             </summary>
+             <param name="queryModel">قالب ویژگی های دریافتی لیست مانند فیلتر های و مرتب سازی ها</param>
+             <returns>لیست تیکت ها به همراه شمارش تمام تیکت ها</returns>
+             <remarks>
+            این یک مثال برای آموزش است \
+             PATCH /authors/id \
+             [ \
+                 { \
+                   "op": "replace", \
+                   "path": "/firstname", \
+                   "value": "new first name" \
+                   } \
+             ] \
+             </remarks>
+             <response code="404">شما دسترسی به تیکت ها ندارید</response>
+             <response code="400">در اطلاعات ارسالی شما مشکلی وجود دارد</response>
+             <response code="200">موفق</response>
+        </member>
+    </members>
+</doc>

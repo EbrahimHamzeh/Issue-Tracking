@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ebrahim.Issuetracking.ViewModels</name>
+    </assembly>
+    <members>
+        <member name="P:Ebrahim.Issuetracking.ViewModels.TiketQueryViewModel.SortBy">
+            <summary>
+            مرتب کردن بر اساس
+            </summary>
+        </member>
+    </members>
+</doc>
