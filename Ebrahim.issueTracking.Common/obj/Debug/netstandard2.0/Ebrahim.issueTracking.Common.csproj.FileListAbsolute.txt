@@ -24,3 +24,4 @@ D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.issueTracking.Common\obj\Debug\
 D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.issueTracking.Common\obj\Debug\netstandard2.0\Ebrahim.issueTracking.Common.AssemblyInfo.cs
 D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.issueTracking.Common\obj\Debug\netstandard2.0\Ebrahim.issueTracking.Common.dll
 D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.issueTracking.Common\obj\Debug\netstandard2.0\Ebrahim.issueTracking.Common.pdb
+D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.issueTracking.Common\obj\Debug\netstandard2.0\Ebrahim.issueTracking.Common.csprojAssemblyReference.cache
