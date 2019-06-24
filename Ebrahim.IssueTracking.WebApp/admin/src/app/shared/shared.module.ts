@@ -5,20 +5,23 @@ import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from './material/material.module';
-
+import { PanelLayoutComponent } from './Layout/panel-layout/panel-layout.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
+    RouterModule,
     FormsModule,
     HttpClientModule,
-    FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ],
   entryComponents: [
     // All components about to be loaded "dynamically" need to be declared in the entryComponents section.
   ],
   declarations: [
+    PanelLayoutComponent
     // common and shared components/directives/pipes between more than one module and components will be listed here.
   ],
   exports: [
@@ -27,7 +30,8 @@ import { MaterialModule } from './material/material.module';
     FormsModule,
     HttpClientModule,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    PanelLayoutComponent
   ]
 })
 export class SharedModule {

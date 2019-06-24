@@ -5,32 +5,37 @@
   !*** ./$$_lazy_route_resource lazy namespace object ***!
   \******************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncaught exception popping up in devtools
-	return Promise.resolve().then(function() {
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
+var map = {
+	"./authentication/authentication.module": [
+		"./src/app/authentication/authentication.module.ts",
+		"authentication-authentication-module"
+	],
+	"./panel/dashboard/dashboard.module": [
+		"./src/app/panel/dashboard/dashboard.module.ts",
+		"panel-dashboard-dashboard-module"
+	]
+};
+function webpackAsyncContext(req) {
+	if(!__webpack_require__.o(map, req)) {
+		return Promise.resolve().then(function() {
+			var e = new Error("Cannot find module '" + req + "'");
+			e.code = 'MODULE_NOT_FOUND';
+			throw e;
+		});
+	}
+
+	var ids = map[req], id = ids[0];
+	return __webpack_require__.e(ids[1]).then(function() {
+		return __webpack_require__(id);
 	});
 }
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/app.component.html":
-/*!**************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/app.component.html ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div fxLayout=\"row\" fxLayoutAlign=\"center center\">\n    <div fxFlex=\"1 1 20%\" fxFlexAlign=\"center center\">\n            <mat-card class=\"example-card\" dir=\"rtl\">\n                    <mat-card-header>\n                      <div mat-card-avatar class=\"example-header-image\"></div>\n                      <mat-card-title>ورود</mat-card-title>\n                      <mat-card-subtitle>Dog Breed</mat-card-subtitle>\n                    </mat-card-header>\n                    <img mat-card-image src=\"https://material.angular.io/assets/img/examples/shiba2.jpg\" alt=\"Photo of a Shiba Inu\">\n                    <mat-card-content>\n                      <p>\n                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n                        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n                        bred for hunting.\n                      </p>\n                    </mat-card-content>\n                    <mat-card-actions>\n                      <button mat-button>ورود</button>\n                      <!-- <button mat-button>SHARE</button> -->\n                    </mat-card-actions>\n                  </mat-card>\n    </div>\n</div>"
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
+module.exports = webpackAsyncContext;
 
 /***/ }),
 
@@ -50,7 +55,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const routes = [];
+const routes = [
+    { path: 'authentication', loadChildren: './authentication/authentication.module#AuthenticationModule' },
+    { path: 'dashboard', loadChildren: './panel/dashboard/dashboard.module#DashboardModule' }
+];
 let AppRoutingModule = class AppRoutingModule {
 };
 AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -61,17 +69,6 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 ], AppRoutingModule);
 
 
-
-/***/ }),
-
-/***/ "./src/app/app.component.css":
-/*!***********************************!*\
-  !*** ./src/app/app.component.css ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".example-card {\r\n    max-width: 400px;\r\n  }\r\n  \r\n  .example-header-image {\r\n    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');\r\n    background-size: cover;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxtRkFBbUY7SUFDbkYsc0JBQXNCO0VBQ3hCIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhhbXBsZS1jYXJkIHtcclxuICAgIG1heC13aWR0aDogNDAwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5leGFtcGxlLWhlYWRlci1pbWFnZSB7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2h0dHBzOi8vbWF0ZXJpYWwuYW5ndWxhci5pby9hc3NldHMvaW1nL2V4YW1wbGVzL3NoaWJhMS5qcGcnKTtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgfSJdfQ== */"
 
 /***/ }),
 
@@ -97,8 +94,7 @@ let AppComponent = class AppComponent {
 AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-root',
-        template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html"),
-        styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+        template: '<router-outlet></router-outlet>'
     })
 ], AppComponent);
 
@@ -238,6 +234,37 @@ CoreModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/shared/Layout/panel-layout/panel-layout.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/shared/Layout/panel-layout/panel-layout.component.ts ***!
+  \**********************************************************************/
+/*! exports provided: PanelLayoutComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PanelLayoutComponent", function() { return PanelLayoutComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let PanelLayoutComponent = class PanelLayoutComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+PanelLayoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-panel-layout',
+        template: '<router-outlet></router-outlet>'
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], PanelLayoutComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/shared/material/material.module.ts":
 /*!****************************************************!*\
   !*** ./src/app/shared/material/material.module.ts ***!
@@ -353,8 +380,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm2015/flex-layout.js");
 /* harmony import */ var _material_material_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./material/material.module */ "./src/app/shared/material/material.module.ts");
+/* harmony import */ var _Layout_panel_layout_panel_layout_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Layout/panel-layout/panel-layout.component */ "./src/app/shared/Layout/panel-layout/panel-layout.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 var SharedModule_1;
+
+
 
 
 
@@ -374,16 +405,18 @@ SharedModule = SharedModule_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
         imports: [
             _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
-            _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["FlexLayoutModule"],
-            _material_material_module__WEBPACK_IMPORTED_MODULE_6__["MaterialModule"]
+            _material_material_module__WEBPACK_IMPORTED_MODULE_6__["MaterialModule"],
+            _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["FlexLayoutModule"]
         ],
         entryComponents: [
         // All components about to be loaded "dynamically" need to be declared in the entryComponents section.
         ],
         declarations: [
-        // common and shared components/directives/pipes between more than one module and components will be listed here.
+            _Layout_panel_layout_panel_layout_component__WEBPACK_IMPORTED_MODULE_7__["PanelLayoutComponent"]
+            // common and shared components/directives/pipes between more than one module and components will be listed here.
         ],
         exports: [
             // common and shared components/directives/pipes between more than one module and components will be listed here.
@@ -391,7 +424,8 @@ SharedModule = SharedModule_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]
             _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
             _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["FlexLayoutModule"],
-            _material_material_module__WEBPACK_IMPORTED_MODULE_6__["MaterialModule"]
+            _material_material_module__WEBPACK_IMPORTED_MODULE_6__["MaterialModule"],
+            _Layout_panel_layout_panel_layout_component__WEBPACK_IMPORTED_MODULE_7__["PanelLayoutComponent"]
         ]
     })
 ], SharedModule);
