@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-panel-layout',
-  template: '<router-outlet></router-outlet>'
+  styleUrls: [ './panel-layout.component.css'],
+  templateUrl: './panel-layout.component.html',
 })
 export class PanelLayoutComponent implements OnInit {
 

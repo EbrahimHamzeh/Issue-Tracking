@@ -39,6 +39,28 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/shared/Layout/panel-layout/panel-layout.component.html":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/shared/Layout/panel-layout/panel-layout.component.html ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-header-menu></app-header-menu>\n\n<router-outlet></router-outlet>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/shared/component/header-menu/header-menu.component.html":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/shared/component/header-menu/header-menu.component.html ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div style=\"height: 100vh;\">\n    <mat-toolbar color=\"primary\" dir=\"rtl\">\n      <button mat-button [matMenuTriggerFor]=\"menu\">Menu</button>\n      <mat-menu #menu=\"matMenu\">\n        <button mat-menu-item>Item 1</button>\n        <button mat-menu-item>Item 2</button>\n      </mat-menu>\n      <button mat-icon-button [matMenuTriggerFor]=\"menu\" aria-label=\"Example icon-button with a menu\">\n        <mat-icon>more_vert</mat-icon>\n      </button>\n      <mat-menu #menu=\"matMenu\">\n        <button mat-menu-item>\n          <mat-icon>dialpad</mat-icon>\n          <span>Redial</span>\n        </button>\n        <button mat-menu-item disabled>\n          <mat-icon>voicemail</mat-icon>\n          <span>Check voice mail</span>\n        </button>\n        <button mat-menu-item>\n          <mat-icon>notifications_off</mat-icon>\n          <span>Disable alerts</span>\n        </button>\n      </mat-menu>\n      <button mat-button [matMenuTriggerFor]=\"animals\">Animal index</button>\n  \n      <mat-menu #animals=\"matMenu\">\n        <button mat-menu-item [matMenuTriggerFor]=\"vertebrates\">Vertebrates</button>\n        <button mat-menu-item [matMenuTriggerFor]=\"invertebrates\">Invertebrates</button>\n      </mat-menu>\n  \n      <mat-menu #vertebrates=\"matMenu\">\n        <button mat-menu-item [matMenuTriggerFor]=\"fish\">Fishes</button>\n        <button mat-menu-item [matMenuTriggerFor]=\"amphibians\">Amphibians</button>\n        <button mat-menu-item [matMenuTriggerFor]=\"reptiles\">Reptiles</button>\n        <button mat-menu-item>Birds</button>\n        <button mat-menu-item>Mammals</button>\n      </mat-menu>\n  \n      <mat-menu #invertebrates=\"matMenu\">\n        <button mat-menu-item>Insects</button>\n        <button mat-menu-item>Molluscs</button>\n        <button mat-menu-item>Crustaceans</button>\n        <button mat-menu-item>Corals</button>\n        <button mat-menu-item>Arachnids</button>\n        <button mat-menu-item>Velvet worms</button>\n        <button mat-menu-item>Horseshoe crabs</button>\n      </mat-menu>\n  \n      <mat-menu #fish=\"matMenu\">\n        <button mat-menu-item>Baikal oilfish</button>\n        <button mat-menu-item>Bala shark</button>\n        <button mat-menu-item>Ballan wrasse</button>\n        <button mat-menu-item>Bamboo shark</button>\n        <button mat-menu-item>Banded killifish</button>\n      </mat-menu>\n  \n      <mat-menu #amphibians=\"matMenu\">\n        <button mat-menu-item>Sonoran desert toad</button>\n        <button mat-menu-item>Western toad</button>\n        <button mat-menu-item>Arroyo toad</button>\n        <button mat-menu-item>Yosemite toad</button>\n      </mat-menu>\n  \n      <mat-menu #reptiles=\"matMenu\">\n        <button mat-menu-item>Banded Day Gecko</button>\n        <button mat-menu-item>Banded Gila Monster</button>\n        <button mat-menu-item>Black Tree Monitor</button>\n        <button mat-menu-item>Blue Spiny Lizard</button>\n        <button mat-menu-item disabled>Velociraptor</button>\n      </mat-menu>\n  \n      <span class=\"example-spacer\"></span>\n  \n      <div fxShow=\"true\" fxHide.lt-md=\"true\">\n        <a href=\"#\" mat-button>کاربران</a>\n        <a href=\"#\" mat-button>کارشناسان</a>\n        <a href=\"#\" mat-button>تیکت‌ها</a>\n        <a [routerLink]=\"['/dashboard/panel/list'] \"mat-button>داشبورد</a>\n        <a href=\"#\" mat-button>تنظیمات</a>\n        <a href=\"#\" mat-button>خروج</a>\n        <mat-menu #menu=\"matMenu\">\n          <button mat-menu-item>\n            <mat-icon>dialpad</mat-icon>\n            <span>Redial</span>\n          </button>\n          <button mat-menu-item disabled>\n            <mat-icon>voicemail</mat-icon>\n            <span>Check voice mail</span>\n          </button>\n          <button mat-menu-item>\n            <mat-icon>notifications_off</mat-icon>\n            <span>Disable alerts</span>\n          </button>\n        </mat-menu>\n      </div>\n      <span>سیستم پشتیبانی</span>\n    </mat-toolbar>\n  </div>"
+
+/***/ }),
+
 /***/ "./src/app/app-routing.module.ts":
 /*!***************************************!*\
   !*** ./src/app/app-routing.module.ts ***!
@@ -195,6 +217,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
 /* harmony import */ var _core_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./core-routing.module */ "./src/app/core/core-routing.module.ts");
+/* harmony import */ var _services_app_config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/app.config */ "./src/app/core/services/app.config.ts");
+/* harmony import */ var _services_api_config_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./services/api-config.service */ "./src/app/core/services/api-config.service.ts");
+
+
 
 
 
@@ -219,11 +245,21 @@ CoreModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         // components that are used in app.component.ts will be listed here.
         ],
         providers: [
-        /* ``No`` global singleton services of the whole app should be listed here anymore!
-           Since they'll be already provided in AppModule using the `tree-shakable providers` of Angular 6.x+ (providedIn: 'root').
-           This new feature allows cleaning up the providers section from the CoreModule.
-           But if you want to provide something with an InjectionToken other that its class, you still have to use this section.
-        */
+            /* ``No`` global singleton services of the whole app should be listed here anymore!
+               Since they'll be already provided in AppModule using the `tree-shakable providers` of Angular 6.x+ (providedIn: 'root').
+               This new feature allows cleaning up the providers section from the CoreModule.
+               But if you want to provide something with an InjectionToken other that its class, you still have to use this section.
+            */
+            {
+                provide: _services_app_config__WEBPACK_IMPORTED_MODULE_4__["APP_CONFIG"],
+                useValue: _services_app_config__WEBPACK_IMPORTED_MODULE_4__["AppConfig"]
+            },
+            {
+                provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__["APP_INITIALIZER"],
+                useFactory: (config) => () => config.loadApiConfig(),
+                deps: [_services_api_config_service__WEBPACK_IMPORTED_MODULE_5__["ApiConfigService"]],
+                multi: true
+            }
         ]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"])()), tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["SkipSelf"])()),
@@ -231,6 +267,96 @@ CoreModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 ], CoreModule);
 
 
+
+/***/ }),
+
+/***/ "./src/app/core/services/api-config.service.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/core/services/api-config.service.ts ***!
+  \*****************************************************/
+/*! exports provided: ApiConfigService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApiConfigService", function() { return ApiConfigService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _app_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.config */ "./src/app/core/services/app.config.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+
+let ApiConfigService = class ApiConfigService {
+    constructor(injector, appConfig) {
+        this.injector = injector;
+        this.appConfig = appConfig;
+        this.config = null;
+    }
+    loadApiConfig() {
+        const http = this.injector.get(_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]);
+        const url = `${this.appConfig.apiEndpoint}/${this.appConfig.apiSettingsPath}`;
+        return http.get(url)
+            .toPromise()
+            .then(config => {
+            this.config = config;
+            console.log('ApiConfig', this.config);
+        })
+            .catch(err => {
+            console.error(`Failed to loadApiConfig(). Make sure ${url} is accessible.`, this.config);
+            return Promise.reject(err);
+        });
+    }
+    get configuration() {
+        if (!this.config) {
+            throw new Error('Attempted to access configuration property before configuration data was loaded.');
+        }
+        return this.config;
+    }
+};
+ApiConfigService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_app_config__WEBPACK_IMPORTED_MODULE_2__["APP_CONFIG"])),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injector"], Object])
+], ApiConfigService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/core/services/app.config.ts":
+/*!*********************************************!*\
+  !*** ./src/app/core/services/app.config.ts ***!
+  \*********************************************/
+/*! exports provided: APP_CONFIG, AppConfig */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "APP_CONFIG", function() { return APP_CONFIG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppConfig", function() { return AppConfig; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+let APP_CONFIG = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('app.config');
+const AppConfig = {
+    apiEndpoint: '/api',
+    apiSettingsPath: 'ApiSettings'
+};
+
+
+/***/ }),
+
+/***/ "./src/app/shared/Layout/panel-layout/panel-layout.component.css":
+/*!***********************************************************************!*\
+  !*** ./src/app/shared/Layout/panel-layout/panel-layout.component.css ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".example-icon {\r\n  padding: 0 14px;\r\n}\r\n\r\n.example-spacer {\r\n  flex: 1 1 auto;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL0xheW91dC9wYW5lbC1sYXlvdXQvcGFuZWwtbGF5b3V0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9MYXlvdXQvcGFuZWwtbGF5b3V0L3BhbmVsLWxheW91dC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtaWNvbiB7XHJcbiAgcGFkZGluZzogMCAxNHB4O1xyXG59XHJcblxyXG4uZXhhbXBsZS1zcGFjZXIge1xyXG4gIGZsZXg6IDEgMSBhdXRvO1xyXG59Il19 */"
 
 /***/ }),
 
@@ -256,10 +382,54 @@ let PanelLayoutComponent = class PanelLayoutComponent {
 PanelLayoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-panel-layout',
-        template: '<router-outlet></router-outlet>'
+        template: __webpack_require__(/*! raw-loader!./panel-layout.component.html */ "./node_modules/raw-loader/index.js!./src/app/shared/Layout/panel-layout/panel-layout.component.html"),
+        styles: [__webpack_require__(/*! ./panel-layout.component.css */ "./src/app/shared/Layout/panel-layout/panel-layout.component.css")]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], PanelLayoutComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/component/header-menu/header-menu.component.css":
+/*!************************************************************************!*\
+  !*** ./src/app/shared/component/header-menu/header-menu.component.css ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9jb21wb25lbnQvaGVhZGVyLW1lbnUvaGVhZGVyLW1lbnUuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/shared/component/header-menu/header-menu.component.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/shared/component/header-menu/header-menu.component.ts ***!
+  \***********************************************************************/
+/*! exports provided: HeaderMenuComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderMenuComponent", function() { return HeaderMenuComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let HeaderMenuComponent = class HeaderMenuComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+HeaderMenuComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-header-menu',
+        template: __webpack_require__(/*! raw-loader!./header-menu.component.html */ "./node_modules/raw-loader/index.js!./src/app/shared/component/header-menu/header-menu.component.html"),
+        styles: [__webpack_require__(/*! ./header-menu.component.css */ "./src/app/shared/component/header-menu/header-menu.component.css")]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], HeaderMenuComponent);
 
 
 
@@ -382,8 +552,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_material_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./material/material.module */ "./src/app/shared/material/material.module.ts");
 /* harmony import */ var _Layout_panel_layout_panel_layout_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Layout/panel-layout/panel-layout.component */ "./src/app/shared/Layout/panel-layout/panel-layout.component.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _component_header_menu_header_menu_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./component/header-menu/header-menu.component */ "./src/app/shared/component/header-menu/header-menu.component.ts");
 
 var SharedModule_1;
+
 
 
 
@@ -409,12 +581,13 @@ SharedModule = SharedModule_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]
             _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
             _material_material_module__WEBPACK_IMPORTED_MODULE_6__["MaterialModule"],
-            _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["FlexLayoutModule"]
+            _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["FlexLayoutModule"],
         ],
         entryComponents: [
         // All components about to be loaded "dynamically" need to be declared in the entryComponents section.
         ],
         declarations: [
+            _component_header_menu_header_menu_component__WEBPACK_IMPORTED_MODULE_9__["HeaderMenuComponent"],
             _Layout_panel_layout_panel_layout_component__WEBPACK_IMPORTED_MODULE_7__["PanelLayoutComponent"]
             // common and shared components/directives/pipes between more than one module and components will be listed here.
         ],

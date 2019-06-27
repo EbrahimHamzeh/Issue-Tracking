@@ -7,6 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './material/material.module';
 import { PanelLayoutComponent } from './Layout/panel-layout/panel-layout.component';
 import { RouterModule } from '@angular/router';
+import { HeaderMenuComponent } from './component/header-menu/header-menu.component';
 
 @NgModule({
   imports: [
@@ -15,12 +16,13 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     HttpClientModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
   ],
   entryComponents: [
     // All components about to be loaded "dynamically" need to be declared in the entryComponents section.
   ],
   declarations: [
+    HeaderMenuComponent,
     PanelLayoutComponent
     // common and shared components/directives/pipes between more than one module and components will be listed here.
   ],

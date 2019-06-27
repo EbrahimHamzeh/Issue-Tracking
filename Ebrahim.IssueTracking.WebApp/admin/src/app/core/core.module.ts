@@ -1,7 +1,9 @@
-import { NgModule, Optional, SkipSelf } from '@angular/core';
+import { NgModule, Optional, SkipSelf, APP_INITIALIZER } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CoreRoutingModule } from './core-routing.module';
+import { APP_CONFIG, AppConfig } from './services/app.config';
+import { ApiConfigService } from './services/api-config.service';
 
 @NgModule({
   imports: [
@@ -20,6 +22,16 @@ import { CoreRoutingModule } from './core-routing.module';
        This new feature allows cleaning up the providers section from the CoreModule.
        But if you want to provide something with an InjectionToken other that its class, you still have to use this section.
     */
+    {
+      provide: APP_CONFIG,
+      useValue: AppConfig
+    },
+    {
+      provide: APP_INITIALIZER,
+      useFactory: (config: ApiConfigService) => () => config.loadApiConfig(),
+      deps: [ApiConfigService],
+      multi: true
+    }
   ]
 })
 export class CoreModule {
