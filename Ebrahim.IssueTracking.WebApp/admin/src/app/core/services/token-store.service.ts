@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import * as jwt_decode from 'jwt-decode';
+
 import { BrowserStorageService } from './browser-storage.service';
 import { ApiConfigService } from './api-config.service';
 import { AuthTokenType } from '../models/auth-token-type';
@@ -25,9 +27,36 @@ export class TokenStoreService {
       return this.browserStorageService.getSession(AuthTokenType[tokenType]);
     }
   }
-  
+
+  // برای دیکد کردن اطلاعات توکن ارسالی از سرور
   getDecodedAccessToken(): any {
-    return jwt_decode
+    return jwt_decode(this.getRawAuthToken(AuthTokenType.AccessToken));
+  }
+
+  // نمایش نام نمایشی کاربر
+  getAuthUserDisplayName(): string {
+    return this.getDecodedAccessToken().DisplayName;
+  }
+
+  // تشخیص تاریخ از بین رفتن اعتبار توکن
+  getAccessTokenExpirationDateUtc(): Date | null {
+    const decode = this.getDecodedAccessToken();
+    if (decode.exp === undefined) {
+      return null;
+    }
+    const date = new Date(0); // The 0 sets the date to the epoch
+    date.setUTCSeconds(decode.exp);
+    return date;
+  }
+
+  // اگر اعتبار توکن تموم شده باشه boolean  برمیگردونه
+  isAccessTokenExpired(): boolean {
+    const expirationDateUtc = this.getAccessTokenExpirationDateUtc();
+    if (!expirationDateUtc) {
+      return true;
+    }
+
+    return !(expirationDateUtc.valueOf() > new Date().valueOf());
   }
 
   // ثبت توکن برای اساس مرابه خاطربسپار
@@ -47,10 +76,31 @@ export class TokenStoreService {
     }
   }
 
-  deleteAuthToken() {
+  getDecodedTokenRoles(): string[] | null {
+    const decodedToken = this.getDecodedAccessToken();
+    const roles = decodedToken['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
+    if (!roles) {
+      return null;
+    }
+
+    if (Array.isArray(roles)) {
+      return roles.map(role => role.toLowerCase());
+    } else {
+      return [roles.toLowerCase()];
+    }
+  }
+
+  // ذخیره توکن ها
+  storeLoginSession(response: any): void {
+    this.setToken(AuthTokenType.AccessToken, response[this.apiConfigService.configuration.accessTokenObjectKey]);
+    this.setToken(AuthTokenType.RefreshToken, response[this.apiConfigService.configuration.refreshTokenObjectKey]);
+  }
+
+  // حذف توکن های اعتبار سنجی
+  deleteAuthTokens() {
     if (this.rememberMe()) {
-      this.browserStorageService.removeLocal(AuthTokenType[AuthTokenType.AccessToken])
-      this.browserStorageService.removeLocal(AuthTokenType[AuthTokenType.RefreshToken])
+      this.browserStorageService.removeLocal(AuthTokenType[AuthTokenType.AccessToken]);
+      this.browserStorageService.removeLocal(AuthTokenType[AuthTokenType.RefreshToken]);
     } else {
       this.browserStorageService.removeSession(AuthTokenType[AuthTokenType.AccessToken]);
       this.browserStorageService.removeSession(AuthTokenType[AuthTokenType.RefreshToken]);
@@ -58,11 +108,21 @@ export class TokenStoreService {
     this.browserStorageService.removeLocal(this.rememberMeToken);
   }
 
+  // آیا گزینه مرا به خاطر بسپار را کاربر انتخاب کرده است؟
   rememberMe(): boolean {
     return this.browserStorageService.getLocal(this.rememberMeToken) === true;
   }
 
+  // مقدار دهی مرا به خاطر بسپار
   setRememberMe(value: boolean): void {
     this.browserStorageService.setLocal(this.rememberMeToken, value);
+  }
+
+  // آیا مقدار توکنها ذخیره شده است؟
+  hasStoredAccessAndRefreshTokens(): boolean {
+    const accessToken = this.getRawAuthToken(AuthTokenType.AccessToken);
+    const refreshToken = this.getRawAuthToken(AuthTokenType.RefreshToken);
+
+    return !this.utilsService.isEmptyString(accessToken) && !this.utilsService.isEmptyString(refreshToken);
   }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj": {}
+    "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj": {}
   },
   "projects": {
-    "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj": {
+    "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj",
+        "projectUniqueName": "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj",
         "projectName": "Ebrahim.IssueTracking.DomainCkasses",
-        "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj",
+        "projectPath": "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj",
         "packagesPath": "C:\\Users\\Ebrahim\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\obj\\",
+        "outputPath": "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

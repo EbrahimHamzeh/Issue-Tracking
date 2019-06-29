@@ -1,12 +1,4 @@
-.login-main{
-
-  margin-top: 10%;
-  
-  }
-  
-  mat-card{
-  
-  min-width: 40%;
-  
-  }
+.spacer {
+  flex: 1 1 auto;
+}
   

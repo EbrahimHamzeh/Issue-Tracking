@@ -639,9 +639,9 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.WebApp\admin\node_modules\material-design-icons\iconfont\material-icons.css */"./node_modules/material-design-icons/iconfont/material-icons.css");
-__webpack_require__(/*! D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.WebApp\admin\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
-module.exports = __webpack_require__(/*! D:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.WebApp\admin\src\styles.css */"./src/styles.css");
+__webpack_require__(/*! d:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.WebApp\admin\node_modules\material-design-icons\iconfont\material-icons.css */"./node_modules/material-design-icons/iconfont/material-icons.css");
+__webpack_require__(/*! d:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.WebApp\admin\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+module.exports = __webpack_require__(/*! d:\Project\Ebrahim.IssueTracking\BackEnd\Ebrahim.IssueTracking.WebApp\admin\src\styles.css */"./src/styles.css");
 
 
 /***/ })
