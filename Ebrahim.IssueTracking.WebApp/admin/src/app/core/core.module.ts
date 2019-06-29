@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { CoreRoutingModule } from './core-routing.module';
 import { APP_CONFIG, AppConfig } from './services/app.config';
 import { ApiConfigService } from './services/api-config.service';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from './auth.interceptor';
 
 @NgModule({
   imports: [
@@ -25,6 +27,11 @@ import { ApiConfigService } from './services/api-config.service';
     {
       provide: APP_CONFIG,
       useValue: AppConfig
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
     },
     {
       provide: APP_INITIALIZER,

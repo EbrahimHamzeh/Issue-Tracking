@@ -4,6 +4,7 @@ import { AuthenticationLayoutComponent } from './authentication-layout.component
 import { LoginComponent } from './login/login.component';
 import { AccessDeniedComponent } from './access-denied/access-denied.component';
 import { AuthGuardPermission } from '../core/models/auth-guard-permission';
+import { AuthGuard } from '../core/services/auth-guard';
 
 const routes: Routes = [
   {
@@ -17,7 +18,7 @@ const routes: Routes = [
               permittedRoles: ['Admin', 'User']
             } as AuthGuardPermission
           },
-        canActivate: [authga]}
+        canActivate: [AuthGuard]}
     ]
   }
 ];

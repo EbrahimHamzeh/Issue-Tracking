@@ -67,13 +67,31 @@ export class AuthService {
           this.refreshTokenService.unscheduleRefreshtoken(true);
           this.authStatusSource.next(false);
           if (navigateToHome) {
-            this.router.navigate(['/']);
+            this.router.navigate(['/authentication/user/login']);
           }
         })
       )
       .subscribe(result => {
         console.log('logout', result);
       });
+  }
+
+  isAuthUserInRoles(requiredRoles: string[]): boolean {
+    const user = this.getAuthUser();
+    if (!user || !user.roles) {
+      return false;
+    }
+
+    if (user.roles.indexOf(this.apiConfigService.configuration.adminRoleName.toLocaleLowerCase()) >= 0) {
+      return true;
+    }
+    return requiredRoles.some(requiredRole => {
+      if (user.roles) {
+        return user.roles.indexOf(requiredRole.toLowerCase()) >= 0;
+      } else {
+        return false;
+      }
+    });
   }
 
   isAuthUserLoggedIn(): boolean {

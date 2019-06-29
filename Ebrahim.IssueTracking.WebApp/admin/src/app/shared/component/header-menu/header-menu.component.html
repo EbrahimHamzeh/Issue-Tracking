@@ -78,7 +78,7 @@
         <a href="#" mat-button>تیکت‌ها</a>
         <a [routerLink]="['/dashboard/panel/list'] "mat-button>داشبورد</a>
         <a href="#" mat-button>تنظیمات</a>
-        <a href="#" mat-button>خروج</a>
+        <a (click)="logout()" mat-button>خروج</a>
         <mat-menu #menu="matMenu">
           <button mat-menu-item>
             <mat-icon>dialpad</mat-icon>
