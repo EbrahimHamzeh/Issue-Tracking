@@ -8,6 +8,9 @@ import { MaterialModule } from './material/material.module';
 import { PanelLayoutComponent } from './Layout/panel-layout/panel-layout.component';
 import { RouterModule } from '@angular/router';
 import { HeaderMenuComponent } from './component/header-menu/header-menu.component';
+import { EqualValidatorDirective } from './directives/equal-validator.directive';
+import { HasAuthUserViewPermissionDirective } from './directives/has-auth-user-view-permission.directive';
+import { IsVisibleForAuthUserDirective } from './directives/is-visible-for-auth-user.directive';
 
 @NgModule({
   imports: [
@@ -23,7 +26,10 @@ import { HeaderMenuComponent } from './component/header-menu/header-menu.compone
   ],
   declarations: [
     HeaderMenuComponent,
-    PanelLayoutComponent
+    PanelLayoutComponent,
+    EqualValidatorDirective,
+    HasAuthUserViewPermissionDirective,
+    IsVisibleForAuthUserDirective
     // common and shared components/directives/pipes between more than one module and components will be listed here.
   ],
   exports: [

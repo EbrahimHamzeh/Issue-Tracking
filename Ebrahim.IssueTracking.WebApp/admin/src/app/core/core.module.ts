@@ -6,6 +6,7 @@ import { APP_CONFIG, AppConfig } from './services/app.config';
 import { ApiConfigService } from './services/api-config.service';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './auth.interceptor';
+import { XsrfInterceptor } from './services/xsrf.interceptor';
 
 @NgModule({
   imports: [
@@ -27,6 +28,11 @@ import { AuthInterceptor } from './auth.interceptor';
     {
       provide: APP_CONFIG,
       useValue: AppConfig
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: XsrfInterceptor,
+      multi: true
     },
     {
       provide: HTTP_INTERCEPTORS,

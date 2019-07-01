@@ -3423,11 +3423,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DataLayer\\Ebrahim.IssueTracking.DataLayer.csproj",
+      "projectUniqueName": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DataLayer\\Ebrahim.IssueTracking.DataLayer.csproj",
       "projectName": "Ebrahim.IssueTracking.DataLayer",
-      "projectPath": "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DataLayer\\Ebrahim.IssueTracking.DataLayer.csproj",
+      "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DataLayer\\Ebrahim.IssueTracking.DataLayer.csproj",
       "packagesPath": "C:\\Users\\Ebrahim\\.nuget\\packages\\",
-      "outputPath": "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DataLayer\\obj\\",
+      "outputPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -3448,11 +3448,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj": {
-              "projectPath": "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj"
+            "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj": {
+              "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj"
             },
-            "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj": {
-              "projectPath": "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj"
+            "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj": {
+              "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.IssueTracking.DomainCkasses\\Ebrahim.IssueTracking.DomainCkasses.csproj"
             }
           }
         }

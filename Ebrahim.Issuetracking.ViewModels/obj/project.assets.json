@@ -2595,11 +2595,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.Issuetracking.ViewModels\\Ebrahim.Issuetracking.ViewModels.csproj",
+      "projectUniqueName": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.Issuetracking.ViewModels\\Ebrahim.Issuetracking.ViewModels.csproj",
       "projectName": "Ebrahim.Issuetracking.ViewModels",
-      "projectPath": "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.Issuetracking.ViewModels\\Ebrahim.Issuetracking.ViewModels.csproj",
+      "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.Issuetracking.ViewModels\\Ebrahim.Issuetracking.ViewModels.csproj",
       "packagesPath": "C:\\Users\\Ebrahim\\.nuget\\packages\\",
-      "outputPath": "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.Issuetracking.ViewModels\\obj\\",
+      "outputPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.Issuetracking.ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -2620,8 +2620,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj": {
-              "projectPath": "d:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj"
+            "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj": {
+              "projectPath": "D:\\Project\\Ebrahim.IssueTracking\\BackEnd\\Ebrahim.issueTracking.Common\\Ebrahim.issueTracking.Common.csproj"
             }
           }
         }
