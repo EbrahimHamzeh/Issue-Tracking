@@ -11,6 +11,9 @@ import { HeaderMenuComponent } from './component/header-menu/header-menu.compone
 import { EqualValidatorDirective } from './directives/equal-validator.directive';
 import { HasAuthUserViewPermissionDirective } from './directives/has-auth-user-view-permission.directive';
 import { IsVisibleForAuthUserDirective } from './directives/is-visible-for-auth-user.directive';
+import { FooterComponent } from './component/footer/footer.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
+import { SidebarComponent } from './component/sidebar/sidebar.component';
 
 @NgModule({
   imports: [
@@ -29,7 +32,10 @@ import { IsVisibleForAuthUserDirective } from './directives/is-visible-for-auth-
     PanelLayoutComponent,
     EqualValidatorDirective,
     HasAuthUserViewPermissionDirective,
-    IsVisibleForAuthUserDirective
+    IsVisibleForAuthUserDirective,
+    FooterComponent,
+    NavbarComponent,
+    SidebarComponent
     // common and shared components/directives/pipes between more than one module and components will be listed here.
   ],
   exports: [

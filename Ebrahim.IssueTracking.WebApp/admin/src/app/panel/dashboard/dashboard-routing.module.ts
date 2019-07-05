@@ -3,14 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardListComponent } from './dashboard-list/dashboard-list.component';
 import { PanelLayoutComponent } from 'src/app/shared/Layout/panel-layout/panel-layout.component';
 
-const routes: Routes = [
-  {
-    path: 'panel',
-    component: PanelLayoutComponent,
-    children: [
-      { path: 'list', component: DashboardListComponent, pathMatch: 'full' }]
-  }
-];
+const routes: Routes = [{
+  path: '',
+  component: DashboardListComponent,
+  pathMatch: 'full'
+}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
