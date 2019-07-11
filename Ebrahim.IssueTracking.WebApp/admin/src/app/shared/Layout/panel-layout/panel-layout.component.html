@@ -1,4 +1,4 @@
-<div class="wrapper">
+<!-- <div class="wrapper">
     <div class="sidebar" data-color="danger" data-background-color="white" data-image="./assets/img/sidebar-1.jpg">
         <app-sidebar></app-sidebar>
         <div class="sidebar-background" style="background-image: url(./assets/img/sidebar-4.jpg)"></div>
@@ -8,4 +8,170 @@
         <router-outlet></router-outlet>
         <app-footer></app-footer>
     </div>
-</div>
+</div> -->
+
+<!-- begin:: Page -->
+<ng-container *ngIf="selfLayout !== 'blank'; else blankLayout">
+	<div class="kt-grid kt-grid--hor kt-grid--root">
+		<!-- begin:: Header Mobile -->
+        <div id="kt_header_mobile" class="kt-header-mobile kt-header-mobile--fixed">
+            <div class="kt-header-mobile__logo">
+                <a routerLink="/">
+                    <img alt="logo" alt="لوگو بزار اینجا"/>
+                </a>
+            </div>
+            <div class="kt-header-mobile__toolbar">
+                <button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>
+                <button appToggle [options]="toggleOptions" class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more-1"></i></button>
+            </div>
+        </div>
+		<!-- end:: Header Mobile -->
+
+		<!-- begin::Body -->
+		<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+				<!-- begin:: Header -->
+				<div ktHeader #ktHeader class="kt-header kt-grid__item" [ngClass]="htmlClassService.getClasses('header', true)" id="kt_header">
+					<ngb-progressbar class="kt-loading-bar" *ngIf="(loader.progress$|async) > 0" [value]="loader.progress$|async" height="3px"></ngb-progressbar>
+				
+					<div class="kt-header__top">
+						<div class="kt-container">
+							<!-- begin:: Brand -->
+							<div class="kt-header__brand kt-grid__item" [ngClass]="htmlClassService.getClasses('brand', true)" id="kt_header_brand">
+								<div class="kt-header__brand-logo">
+									<a href="javascript:;" routerLink="/demo2">
+										<img alt="logo" alt="headerLogo" class="kt-header__brand-logo-default"/>
+										<img alt="logo" alt="headerStickyLogo" class="kt-header__brand-logo-sticky"/>
+									</a>
+								</div>
+								<div class="kt-header__brand-nav">
+									<div ngbDropdown class="dropdown">
+										<button ngbDropdownToggle type="button" class="btn btn-default dropdown-toggle">
+											SAAS Customers
+										</button>
+										<div ngbDropdownMenu class="dropdown-menu dropdown-menu-lg">
+											<ul class="kt-nav kt-nav--bold kt-nav--md-space kt-nav--v3 kt-margin-t-20 kt-margin-b-20">
+												<li class="kt-nav__item">
+													<a class="kt-nav__link active" href="javascript:;">
+														<span class="kt-nav__link-icon"><i class="flaticon2-user"></i></span>
+														<span class="kt-nav__link-text">Human Resources</span>
+													</a>
+												</li>
+												<li class="kt-nav__item">
+													<a class="kt-nav__link" href="javascript:;">
+														<span class="kt-nav__link-icon"><i class="flaticon-feed"></i></span>
+														<span class="kt-nav__link-text">Customer Relationship</span>
+													</a>
+												</li>
+												<li class="kt-nav__item">
+													<a class="kt-nav__link" href="javascript:;">
+														<span class="kt-nav__link-icon"><i class="flaticon2-settings"></i></span>
+														<span class="kt-nav__link-text">Order Processing</span>
+													</a>
+												</li>
+												<li class="kt-nav__item">
+													<a class="kt-nav__link" href="javascript:;">
+														<span class="kt-nav__link-icon"><i class="flaticon2-chart2"></i></span>
+														<span class="kt-nav__link-text">Accounting</span>
+													</a>
+												</li>
+												<li class="kt-nav__separator"></li>
+												<li class="kt-nav__item">
+													<a class="kt-nav__link" href="javascript:;">
+														<span class="kt-nav__link-icon"><i class="flaticon-security"></i></span>
+														<span class="kt-nav__link-text">Finance</span>
+													</a>
+												</li>
+												<li class="kt-nav__item">
+													<a class="kt-nav__link" href="javascript:;">
+														<span class="kt-nav__link-icon"><i class="flaticon2-cup"></i></span>
+														<span class="kt-nav__link-text">Administration</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end:: Brand -->
+							<!-- end:: Brand -->
+							<!-- begin:: Header Topbar -->
+							<div class="kt-header__topbar">
+								<!--begin: My Cart -->
+								<!-- <kt-cart [bgImage]="'./assets/media/misc/bg-1.jpg'" [icon]="'./assets/media/icons/svg/Shopping/Cart%233.svg'" [useSVG]="true"></kt-cart> -->
+								<!--end: My Cart -->
+								<!--begin: Notifications -->
+								<!-- <kt-notification [bgImage]="'./assets/media/misc/bg-1.jpg'" [pulse]="true" [skin]="'dark'" [icon]="'./assets/media/icons/svg/Code/Compiling.svg'" [useSVG]="true"></kt-notification> -->
+								<!--end: Notifications -->
+								<!--begin: Quick actions -->
+								<!-- <kt-quick-action [bgImage]="'./assets/media/misc/bg-2.jpg'" [skin]="'dark'" [icon]="'./assets/media/icons/svg/Media/Equalizer.svg'" [useSVG]="true"></kt-quick-action> -->
+								<!--end: Quick actions -->
+								<!--begin: Quick panel toggler -->
+								<div class="kt-header__topbar-item kt-header__topbar-item--quick-panel" data-placement="left" ngbTooltip="Quick panel">
+									<div class="kt-header__topbar-wrapper">
+										<span class="kt-header__topbar-icon" id="kt_quick_panel_toggler_btn">
+										<!-- <span class="kt-svg-icon" [inlineSVG]="'./assets/media/icons/svg/Layout/Layout-4-blocks.svg'"></span> -->
+										</span>
+									</div>
+								</div>
+								<!--end: Quick panel toggler -->
+								<!--begin: Language bar -->
+								<!-- <kt-language-selector></kt-language-selector> -->
+								<!--end: Language bar -->
+								<!--begin: User bar -->
+								<!-- <kt-user-profile2></kt-user-profile2> -->
+								<!--end: User bar -->
+							</div>
+							<!-- end:: Header Topbar -->
+						</div>
+					</div>
+					<div class="kt-header__bottom">
+						<div class="kt-container">
+							<!-- begin: Header Menu -->
+							<!-- <kt-menu-horizontal *ngIf="menuHeaderDisplay"></kt-menu-horizontal> -->
+							<!-- end: Header Menu -->
+						</div>
+					</div>
+				</div>
+				<!-- end:: Header -->
+
+				<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-grid--stretch">
+					<div class="kt-container kt-body kt-grid kt-grid--ver" id="kt_body">
+						<!-- begin:: Aside Left -->
+						<ng-container *ngIf="asideDisplay">
+							<button class="kt-aside-close" id="kt_aside_close_btn"><i class="la la-close"></i></button>
+							<!-- <kt-aside-left></kt-aside-left> -->
+						</ng-container>
+						<!-- end:: Aside Left -->
+
+						<!-- begin:: Content -->
+						<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
+							<!-- begin:: Content Head -->
+							<!-- <kt-subheader *ngIf="subheaderDisplay"></kt-subheader> -->
+							<!-- end:: Content Head -->
+
+							<!-- begin:: Content Body -->
+							<div ktContentAnimate class="kt-content kt-grid__item kt-grid__item--fluid" id="kt_content">
+								<router-outlet></router-outlet>
+							</div>
+							<!-- end:: Content Body -->
+						</div>
+						<!-- end:: Content -->
+					</div>
+				</div>
+
+				<!-- <kt-footer></kt-footer> -->
+			</div>
+		</div>
+		<!-- end:: Body -->
+
+		<!-- <kt-quick-panel></kt-quick-panel>
+		<kt-scroll-top></kt-scroll-top>
+		<kt-sticky-toolbar></kt-sticky-toolbar> -->
+	</div>
+</ng-container>
+<!-- end:: Page -->
+
+<ng-template #blankLayout>
+	<router-outlet></router-outlet>
+</ng-template>

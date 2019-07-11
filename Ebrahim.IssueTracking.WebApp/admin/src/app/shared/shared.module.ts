@@ -14,6 +14,9 @@ import { IsVisibleForAuthUserDirective } from './directives/is-visible-for-auth-
 import { FooterComponent } from './component/footer/footer.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { SidebarComponent } from './component/sidebar/sidebar.component';
+import { ToggleDirective } from './directives/toggle.directive';
+import { SparklineChartDirective } from './directives/sparkline-chart.directive';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -23,6 +26,7 @@ import { SidebarComponent } from './component/sidebar/sidebar.component';
     HttpClientModule,
     MaterialModule,
     FlexLayoutModule,
+    NgbModule
   ],
   entryComponents: [
     // All components about to be loaded "dynamically" need to be declared in the entryComponents section.
@@ -35,7 +39,9 @@ import { SidebarComponent } from './component/sidebar/sidebar.component';
     IsVisibleForAuthUserDirective,
     FooterComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    ToggleDirective,
+    SparklineChartDirective
     // common and shared components/directives/pipes between more than one module and components will be listed here.
   ],
   exports: [
@@ -45,7 +51,8 @@ import { SidebarComponent } from './component/sidebar/sidebar.component';
     HttpClientModule,
     FlexLayoutModule,
     MaterialModule,
-    PanelLayoutComponent
+    PanelLayoutComponent,
+    NgbModule
   ]
 })
 export class SharedModule {

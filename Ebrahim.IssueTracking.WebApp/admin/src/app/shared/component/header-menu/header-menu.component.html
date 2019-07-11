@@ -1,4 +1,4 @@
-<div style="height: 100vh;">
+<!-- <div style="height: 100vh;">
     <mat-toolbar color="primary" dir="rtl">
       <button mat-button [matMenuTriggerFor]="menu">Menu</button>
       <mat-menu #menu="matMenu">
@@ -96,4 +96,28 @@
       </div>
       <span>سیستم پشتیبانی</span>
     </mat-toolbar>
-  </div>
+  </div> -->
+
+  <!-- begin: Header -->
+<div ktHeader #ktHeader class="kt-header kt-grid__item kt-header--fixed" id="kt_header">
+	<ngb-progressbar class="kt-loading-bar" *ngIf="(loader.progress$|async) > 0" [value]="loader.progress$|async" height="3px"></ngb-progressbar>
+
+	<div class="kt-header__top">
+		<div class="kt-container">
+			<!-- begin:: Brand -->
+			<!-- <kt-brand></kt-brand> -->
+			<!-- end:: Brand -->
+			<!-- begin:: Header Topbar -->
+			<!-- <kt-topbar></kt-topbar> -->
+			<!-- end:: Header Topbar -->
+		</div>
+	</div>
+	<div class="kt-header__bottom">
+		<div class="kt-container">
+			<!-- begin: Header Menu -->
+			<!-- <kt-menu-horizontal *ngIf="menuHeaderDisplay"></kt-menu-horizontal> -->
+			<!-- end: Header Menu -->
+		</div>
+	</div>
+</div>
+<!-- end: Header -->
